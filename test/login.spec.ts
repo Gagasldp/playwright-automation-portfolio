@@ -2,6 +2,9 @@ import { test, expect } from '@playwright/test';
 
 const validEmail = 'qagagasur@gmail.com';
 const validPassword = '1234';
+const wrongEmail = 'qagagas@gmail.com';
+const wrongPassword = '12345';
+const invalidEmail = 'inimahsalahformat';
 
 test.describe('Login Feature', () => {
 
@@ -19,7 +22,7 @@ test.describe('Login Feature', () => {
   });
 
   test('Login gagal - email salah', async ({ page }) => {
-    await page.getByPlaceholder('Email').fill('salah@gmail.com');
+    await page.getByPlaceholder('Email').fill(wrongEmail);
     await page.getByPlaceholder('Password').fill(validPassword);
     await page.getByRole('button', { name: 'Login' }).click();
 
@@ -29,7 +32,7 @@ test.describe('Login Feature', () => {
 
   test('Login gagal - password salah', async ({ page }) => {
     await page.getByPlaceholder('Email').fill(validEmail);
-    await page.getByPlaceholder('Password').fill('wrongpass');
+    await page.getByPlaceholder('Password').fill(wrongPassword);
     await page.getByRole('button', { name: 'Login' }).click();
 
     await expect(page.getByText('Login gagal silahkan periksa data anda')).toBeVisible();
@@ -51,7 +54,7 @@ test.describe('Login Feature', () => {
   });
 
   test('Validasi - format email salah', async ({ page }) => {
-    await page.getByPlaceholder('Email').fill('emailinvalid');
+    await page.getByPlaceholder('Email').fill(invalidEmail);
     await page.getByPlaceholder('Password').fill(validPassword);
     await page.getByRole('button', { name: 'Login' }).click();
 
