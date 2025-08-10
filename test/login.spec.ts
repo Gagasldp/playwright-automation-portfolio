@@ -9,7 +9,7 @@ const invalidEmail = 'inimahsalahformat';
 test.describe('Login Feature', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('https://partner.ur-hub.com/login'); // ganti sesuai URL login kamu
+    await page.goto('https://partner.ur-hub.com/login'); // ganti sesuai URL login
   });
 
   test('Login sukses dengan kredensial valid', async ({ page }) => {
