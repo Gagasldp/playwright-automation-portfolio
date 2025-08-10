@@ -46,7 +46,15 @@ It includes various test scenarios, Page Object Model (POM) implementations, API
 ---
 
 ## 📸 Sample Test Execution
-![Test Report Screenshot](docs/assets/test-report-login.png)
+
+### ✅ Terminal Output (All Tests Passed)
+![Terminal Output](docs/assets/terminal-output.png)
+
+### 📄 HTML Report
+![HTML Report](docs/assets/html-report.png)
+
+> *Note:* You can find the detailed HTML report in the `/docs` folder of this repository.
+
 
 ---
 
