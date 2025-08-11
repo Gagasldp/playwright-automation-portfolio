@@ -1,0 +1,335 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - img "UR"
+  - textbox "Cari..."
+  - paragraph: Gibson strats
+- list:
+  - listitem:
+    - link "Dashboard":
+      - /url: /dashboard
+  - listitem:
+    - text: Laporan
+    - list:
+      - listitem:
+        - text: Penjualan
+        - list:
+          - listitem:
+            - link "Summary":
+              - /url: /summary-report
+          - listitem:
+            - link "Pemasukan":
+              - /url: /balance-report
+          - listitem:
+            - link "Laba Kotor":
+              - /url: /gross-profit
+          - listitem:
+            - link "Laba Bersih":
+              - /url: /net-profit
+          - listitem:
+            - link "Tipe":
+              - /url: /transaction-types
+          - listitem:
+            - link "Departemen":
+              - /url: /department-sales
+          - listitem:
+            - link "Kategori":
+              - /url: /category-sales
+          - listitem:
+            - link "Produk":
+              - /url: /menu-sales
+          - listitem:
+            - link "Variant":
+              - /url: /variant-sales
+          - listitem:
+            - link "Bundle":
+              - /url: /bundle-sales
+          - listitem:
+            - link "Meja":
+              - /url: /table-sales
+          - listitem:
+            - link "Diskon":
+              - /url: /discount-sales
+          - listitem:
+            - link "Pemasukan Service":
+              - /url: /gratuity-income
+          - listitem:
+            - link "Pemasukan Pajak":
+              - /url: /tax-income
+          - listitem:
+            - link "Surcharge":
+              - /url: /surcharge-report
+      - listitem:
+        - link "Shift":
+          - /url: /shifts
+      - listitem:
+        - link "Daftar Transaksi":
+          - /url: /transaction-list
+      - listitem:
+        - link "Nilai Stok":
+          - /url: /value-stock
+      - listitem:
+        - link "Smart Waiter":
+          - /url: /smart-waiters-performance
+      - listitem:
+        - link "Pembayaran Piutang":
+          - /url: /paid-ar-reports
+      - listitem:
+        - link "Stock Movement":
+          - /url: /stock-movements
+      - listitem:
+        - link "Transaksi Void":
+          - /url: /voided-transactions
+      - listitem:
+        - link "Repeat Customers":
+          - /url: /repeat-customers
+  - listitem:
+    - text: Meja
+    - list:
+      - listitem:
+        - link "Daftar Meja":
+          - /url: /table-list
+      - listitem:
+        - link "Group Meja":
+          - /url: /table-group
+  - listitem:
+    - text: Inventory
+    - list:
+      - listitem:
+        - link "Kategori":
+          - /url: /raw-material-categories
+      - listitem:
+        - link "Bahan Baku":
+          - /url: /raw-material
+      - listitem:
+        - link "Bahan Setengah Jadi":
+          - /url: /semi-finished-goods
+      - listitem:
+        - link "Produksi Setengah Jadi":
+          - /url: /semi-finished-goods-produce
+      - listitem:
+        - link "Supplier":
+          - /url: /suppliers
+      - listitem:
+        - link "Purchase Order":
+          - /url: /purchase-orders
+      - listitem:
+        - link "Penerimaan Barang":
+          - /url: /goods-receipt
+      - listitem:
+        - link "Adjustment":
+          - /url: /stock-adjustment
+  - listitem:
+    - text: Produk
+    - list:
+      - listitem:
+        - link "Departemen":
+          - /url: /departments
+      - listitem:
+        - link "Kategori Produk":
+          - /url: /categories
+      - listitem:
+        - link "Produk":
+          - /url: /menus
+      - listitem:
+        - link "Varian":
+          - /url: /variants
+      - listitem:
+        - link "Bundle":
+          - /url: /bundles
+  - listitem:
+    - text: Pelanggan
+    - list:
+      - listitem:
+        - link "Daftar Pelanggan":
+          - /url: /customers
+      - listitem:
+        - link "Pelanggan Spesial":
+          - /url: /special-members
+  - listitem:
+    - text: Reservasi
+    - list:
+      - listitem:
+        - link "Area Reservasi":
+          - /url: /reservation-area
+      - listitem:
+        - link "Kebijakan Reservasi":
+          - /url: /policies
+      - listitem:
+        - link "Daftar Reservasi":
+          - /url: /reservation-calendar
+  - listitem:
+    - text: Promosi
+    - list:
+      - listitem:
+        - link "Voucher":
+          - /url: /vouchers
+      - listitem:
+        - link "Kategori Diskon":
+          - /url: /discount-categories
+      - listitem:
+        - link "Program Toko":
+          - /url: /programs
+      - listitem:
+        - link "Voucher Redeemable":
+          - /url: /redeemable-vouchers
+      - listitem:
+        - link "Voucher Membership":
+          - /url: /membership-vouchers
+      - listitem:
+        - link "Smart Waiter":
+          - /url: /smart-waiter
+  - listitem:
+    - link "Review":
+      - /url: /reviews
+  - listitem:
+    - text: Keuangan
+    - list:
+      - listitem:
+        - link "Piutang":
+          - /url: /account-receivables
+      - listitem:
+        - link "Hutang":
+          - /url: /account-payable
+      - listitem:
+        - link "Saldo E-Wallet":
+          - /url: /ewallet-balances
+  - listitem:
+    - text: Biaya Operasional
+    - list:
+      - listitem:
+        - link "Kategori":
+          - /url: /expense-categories
+      - listitem:
+        - link "Biaya Operasional":
+          - /url: /operational-expenses
+      - listitem:
+        - link "Biaya Operasional Otomatis":
+          - /url: /recurring-operational-expenses
+  - listitem:
+    - text: Karyawan
+    - list:
+      - listitem:
+        - link "Daftar Karyawan":
+          - /url: /employees
+      - listitem:
+        - link "Pola Kerja":
+          - /url: /attendance-patterns
+      - listitem:
+        - link "Laporan Kehadiran":
+          - /url: /attendance
+      - listitem:
+        - link "Hak Akses":
+          - /url: /roles
+  - listitem:
+    - text: Pre-Order
+    - list:
+      - listitem:
+        - link "Produk":
+          - /url: /pre-order-menus
+      - listitem:
+        - link "Jadwal":
+          - /url: /pre-order-schedules
+  - listitem:
+    - text: Pengaturan
+    - list:
+      - listitem:
+        - link "Pengaturan Akun":
+          - /url: /profile-settings
+      - listitem:
+        - link "Pengaturan Partner":
+          - /url: /business-profile
+      - listitem:
+        - link "Pengaturan Printer":
+          - /url: /printer-settings
+      - listitem:
+        - link "Surcharges":
+          - /url: /surcharges
+      - listitem:
+        - link "Pengiriman Toko":
+          - /url: /custom-deliveries
+      - listitem:
+        - link "Slider Gambar":
+          - /url: /custom-images
+      - listitem:
+        - link "Jam Operasional":
+          - /url: /add-open-hours
+      - listitem:
+        - link "Metode Pembayaran":
+          - /url: /custom-payment-method
+      - listitem:
+        - link "Rekening Bank":
+          - /url: /bank-accounts
+      - listitem:
+        - link "Tambah Cabang":
+          - /url: /add-partner-branch
+      - listitem:
+        - link "Tagihan":
+          - /url: /billing
+  - listitem:
+    - link "Keluar":
+      - /url: /logout
+- button
+- main:
+  - list
+  - text: Periode (dibayar) Gibson Cafe
+  - textbox
+  - button "Aug 1, 2025 - Aug 11, 2025"
+  - paragraph: Penjualan
+  - heading "Rp 277.000" [level=4]
+  - paragraph: Penjualan Bersih
+  - heading "Rp 332.054" [level=4]
+  - link "Laba Kotor Rp 332.054":
+    - /url: /gross-profit
+    - paragraph: Laba Kotor
+    - heading "Rp 332.054" [level=4]
+  - link "Laba Bersih Rp 269.500":
+    - /url: /net-profit
+    - paragraph: Laba Bersih
+    - heading "Rp 269.500" [level=4]
+  - link "Biaya Operasional Rp 0":
+    - /url: /operational-expenses
+    - paragraph: Biaya Operasional
+    - heading "Rp 0" [level=4]
+  - link "Transaksi 6":
+    - /url: /transaction-list
+    - paragraph: Transaksi
+    - heading "6" [level=4]
+  - link "Rata-rata penjualan per transaksi Rp 46.167":
+    - /url: /transaction-list
+    - paragraph: Rata-rata penjualan per transaksi
+    - heading "Rp 46.167" [level=4]
+  - link "Margin Kotor 120%":
+    - /url: /
+    - paragraph: Margin Kotor
+    - heading "120%" [level=4]
+  - link "Margin Bersih 97%":
+    - /url: /
+    - paragraph: Margin Bersih
+    - heading "97%" [level=4]
+  - link "Bahan Baku Expired 0":
+    - /url: /raw-material-expired
+    - paragraph: Bahan Baku Expired
+    - heading "0" [level=4]
+  - link "Bahan Baku Hampir Habis 112":
+    - /url: /raw-material-expired
+    - paragraph: Bahan Baku Hampir Habis
+    - heading "112" [level=4]
+  - paragraph: Metode Pembayaran
+  - paragraph: Usia
+  - paragraph: Gender
+  - paragraph: Best Seller
+  - paragraph: Penjualan Harian
+  - paragraph: Penjualan Bulanan
+  - text: "2025"
+  - textbox
+  - paragraph: Jam Ramai
+  - paragraph: Hari Ramai
+  - paragraph: Kategori Berdasarkan Volume
+  - paragraph: Kategori Berdasarkan Penjualan
+- contentinfo:
+  - text: © 2021
+  - link "PT. Rahmat Tuhan Lestari":
+    - /url: https://ur-hub.com
+```
